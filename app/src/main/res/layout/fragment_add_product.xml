@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+    <EditText
+        android:id="@+id/proName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="product name" />
+    <EditText
+        android:id="@+id/proPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="product price" />
+    <EditText
+        android:id="@+id/proDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="product description" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:text="Browse for Image"
+            android:textSize="32sp" />
+      <ImageView
+        android:layout_width="200dp"
+        android:id="@+id/proImage"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:text="All_Product Fragment"
+        android:textSize="30dp"
+        android:autofillHints="fetch image from gallery"
+          android:tooltipText="add image"
+          android:src="@drawable/baseline_image_24"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_addProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Product"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_updtProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Product"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>
